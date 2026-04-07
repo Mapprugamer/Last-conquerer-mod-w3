@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Last conquerer map w3</title>
+
+<style>
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1a001f, #000000);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* NAV */
+nav {
+  background: #0d0d0d;
+  padding: 15px;
+  box-shadow: 0 0 15px #a020f0;
+}
+
+nav a {
+  margin: 15px;
+  color: #c77dff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 10px #c77dff;
+}
+
+/* SECCIONES */
+.seccion {
+  display: none;
+  padding: 20px;
+}
+
+.activa {
+  display: block;
+}
+
+/* BOTONES */
+button {
+  background: transparent;
+  border: 2px solid #a020f0;
+  color: #c77dff;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #a020f0;
+}
+
+button:hover {
+  background: #a020f0;
+  color: white;
+  box-shadow: 0 0 20px #c77dff;
+}
+
+/* IMÁGENES */
+img {
+  width: 70%;
+  margin-top: 20px;
+  border: 2px solid #a020f0;
+  box-shadow: 0 0 20px #a020f0;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* TITULOS */
+h1 {
+  text-shadow: 0 0 15px #a020f0;
+}
+
+h2 {
+  color: #c77dff;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🔥 Last conquerer mod 🔥</h1>
+
+<nav>
+  <a onclick="mostrar('inicio')">Inicio</a>
+  <a onclick="mostrar('comentarios')">Comentarios</a>
+  <a onclick="mostrar('descargas')">Descargas</a>
+</nav>
+
+<!-- INICIO -->
+<div id="inicio" class="seccion activa">
+  <h2>🎮 Presentación</h2>
+  
+  <!-- Tus imágenes -->
+  <img src="barco.png" alt="Imagen 1 del mod">
+  <img src="piratas.png" alt="Imagen 2 del mod">
+
+  <p>El mejor mod que vas a probar 💜</p>
+</div>
+
+<!-- COMENTARIOS -->
+<div id="comentarios" class="seccion">
+  <h2>💬 Comentarios</h2>
+  <p>Próximamente comentarios...</p>
+</div>
+
+<!-- DESCARGAS -->
+<div id="descargas" class="seccion">
+  <h2>📥 Descargas</h2>
+
+  <a href="https://www.mediafire.com/file/s886s0r0c06vpbb/(12)LastConquerer.rar/file" target="_blank">
+    <button>⬇ Descargar v1.0</button>
+  </a>
+
+  <a href="https://www.mediafire.com/file/lkqg1ablwq8gjr9/(12)LastConquerer+1.0.1.rar/file" target="_blank">
+    <button>⬇ Descargar v1.0.1</button>
+  </a>
+
+  <a href="https://www.mediafire.com/file/jes4byryyt0ff90/(12)LastConquerer+1.0.2.rar/file" target="_blank">
+    <button>⬇ Descargar v1.0.2</button>
+  </a>
+
+  <a href="https://www.mediafire.com/file/wzy461hotxe3aso/(12)LastConquerer+1.0.3.rar/file" target="_blank">
+    <button>⬇ Descargar v1.0.3</button>
+  </a>
+</div>
+
+<script>
+function mostrar(seccion) {
+  document.querySelectorAll('.seccion').forEach(s => s.classList.remove('activa'));
+  document.getElementById(seccion).classList.add('activa');
+}
+</script>
+
+</body>
+</html>
